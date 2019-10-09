@@ -1,0 +1,31 @@
+<div class="layout layout_grid_ex" ng-controller="agc242templatecontroller" id="agc242templatecontroller">
+	<style>
+		#agc242templatecontroller .text_1 {font-size:28px; font-weight:bold; padding:10px; text-align:right; padding-top:30px; line-height: 30px;}
+		#agc242templatecontroller .text_2 {font-size:28px; font-weight:bold; padding:10px; padding-top:30px; line-height: 30px;}
+		#agc242templatecontroller .item_feature {text-align: center;padding-top: 30px;border: 1px solid #ffffff5e;border-radius: 10px;background-color: #ecebeb52;}
+		#agc242templatecontroller .item_feature img {width:90%; }
+		#agc242templatecontroller .item_feature div.title {font-weight:bold; padding-top:5px; font-size: 15px;}
+	</style>
+	<ion-content fullscreen>
+
+
+	<ion-grid>
+	  <ion-row>
+		<ion-col><div class="text_1"><ion-text color="primary" text-right ng-bind-html="options.text_1"></ion-text></div></ion-col>
+		<ion-col><div class="text_2"><ion-text color="secondary" ng-bind-html="options.text_2"></ion-text></div></ion-col>
+	  </ion-row>
+	  
+	  <ion-row ng-repeat="row in features_options">
+		<ion-col ng-repeat="item in row" text-center>
+			<div class="item_feature" ng-click="openFeature(item)">
+				<img src="{{item.icon_url}}" ng-src="{{item.icon_url}}">
+				<div class="title"><ion-text color="primary">{{item.name}}<ion-text></div>
+			</div>
+		</ion-col>
+	  </ion-row>
+	  
+	</ion-grid>
+
+
+	</ion-content>
+</div>

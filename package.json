@@ -1,0 +1,8 @@
+{
+  "name": "LayoutGridEx",
+  "description": "Layout example for NWICODECMS",
+  "type": "layout",
+  "version": "1.0.1",
+  "dependencies": {
+  }
+}
