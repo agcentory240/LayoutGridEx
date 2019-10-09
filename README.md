@@ -81,7 +81,7 @@ class LayoutGridEx_Form_LayoutGridExOptions extends Nwicode_Form_Options_Abstrac
 ```
 В методе init() форма создается, в методе populate происходит заполнение формы пользовательскими данными, которые не могут быть заполнены в init (например, переназначенными значениями)).
 
-Как видно, в самом начале формы задается ее обработчик **/layoutgridex/application/formoptions** , который находится в** /app/local/modules/LayoutGridEx/controllers/ApplicationController.php**
+Как видно, в самом начале формы задается ее обработчик **/layoutgridex/application/formoptions** , который находится в **/app/local/modules/LayoutGridEx/controllers/ApplicationController.php**
 
 Сабмит этой формы происходит в данный контроллер в метод formoptionsAction() - форма сохраняет свои настройки. При необходимости, функционал контроллера можно расширить (например для загрузки картинок или обработки richdata). В нашем случае мы сохраняем переменные text_1 и text_2, которые будем использовать в макете.
 
@@ -257,7 +257,7 @@ App.controller('agc242templatecontroller', function($scope,Url,$ionicSideMenuDel
 	  </ion-row>
 ```
 
-В силу простоты макета мы не испольовали файл стилей style.css, а указали стили в самом макете.
+В силу простоты макета мы не использовали файл стилей style.css, а указали стили в самом макете.
 
 
 
